@@ -1,6 +1,19 @@
 package com.cydeo.day02;
 
+import com.cydeo.utilities.Driver;
+import com.cydeo.utilities.PracticeCydeoReader;
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
 public class HomeWork3 {
+    @Test
+    public void T1(){
+        Driver.getDriver().get(PracticeCydeoReader.getProperty("GoogleTitleVerification"));
+        Driver.getDriver().findElement(By.className("(<QS5gu sy4vM>)")).click();
+        Driver.getDriver().findElement(By.className("(<gb_d>)")).click();
+        //QS5gu sy4vM//
+
+    }
 }
 /*
 TC #3: Back and forth navigation
